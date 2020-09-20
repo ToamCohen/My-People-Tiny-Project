@@ -1,0 +1,18 @@
+#container{
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.box {
+	display: inline-block;
+	padding: 2em;
+	margin: 1em;
+	background-color: rgb(241, 100, 241);
+	border-radius: 1em;
+	box-shadow: 7px 7px 7px 7px rgb(107, 107, 107);
+}
+
+#container  :hover {
+	background-color: rgb(97, 11, 11);
+}
