@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<dic id="container"></dic>
+<body>
+	<script id="people-template" type="text/x-handlebars-template">
+		{{#each people}}
+		<div id={{id.value}} || class="box" >
+			<p>{{name.first}}-{{name.last}} </p>
+			<div><a href="">{{email}}</a></div>
+		</div>
+		{{/each}}
+
+	</script>
+
+
+
+	<script src="./node_modules/jquery/dist/jquery.js"></script>
+	<script src="./node_modules/handlebars/dist/handlebars.js"></script>
+	<script src="renderer.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
